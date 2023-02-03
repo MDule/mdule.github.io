@@ -71,3 +71,22 @@ body {
   height: 70px;
   transform: translate(-45px, -90px);
 }
+
+main > h2 {
+  padding: 25px 0;
+  text-align: center;
+}
+
+#container-education {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background-color: gainsboro;
+  border-bottom: 3px solid black;
+}
+
+.institution {
+  font-size: 20px;
+  font-weight: bold;
+}
