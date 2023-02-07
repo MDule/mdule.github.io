@@ -10,7 +10,7 @@
 }
 
 body {
-  width: 1000px;
+  max-width: 1000px; /* radi smanjivanje responsive, prvi prelom 940px width*/
 }
 
 #container-header {
