@@ -1,6 +1,7 @@
 :root {
   --dark-color: #313c4e; /*box on left*/
   --accent-color: #449399;
+  --lighter-text: #414141;
 }
 
 * {
@@ -72,21 +73,65 @@ body {
   transform: translate(-45px, -90px);
 }
 
-main > h2 {
-  padding: 25px 0;
-  text-align: center;
+.title {
+  padding: 30px 20px 20px;
+  text-align: left;
+  font-size: 26px;
 }
 
-#container-education {
+/* line thinghy */
+.title > span {
+  display: inline-block;
+  margin-left: 6px;
+  border-bottom: 1px solid black;
+}
+
+.longer {
+  width: 77.8%;
+}
+
+.shorter {
+  width: 74.8%;
+}
+
+.container {
+  margin: 0;
+  padding: 0 20px 10px 20px;
+  color: var(--lighter-text);
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  background-color: gainsboro;
-  border-bottom: 3px solid black;
 }
 
 .institution {
+  flex: 50%;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
+  padding-bottom: 7px;
+}
+
+.duration,
+.place {
+  color: var(--accent-color);
+  flex: 50%;
+  text-align: end;
+  font-style: italic;
+}
+
+.program {
+  flex: 50%;
+  font-size: 16px;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.full-width {
+  flex: 100%;
+}
+
+.modul {
+  font-weight: 700;
+}
+
+li {
+  padding-left: 10px;
 }
