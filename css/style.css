@@ -86,10 +86,12 @@ body {
   border-bottom: 1px solid black;
 }
 
+/* education */
 .longer {
-  width: 77.8%;
+  width: 78.8%;
 }
 
+/* work */
 .shorter {
   width: 74.8%;
 }
