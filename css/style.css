@@ -19,7 +19,8 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  padding: 20px 20px 10px 20px;
+  padding: 20px 10px;
+  margin-bottom: 10px;
   background-color: skyblue;
   border-bottom: 3px solid black;
 }
@@ -74,7 +75,7 @@ body {
 }
 
 .title {
-  padding: 30px 20px 20px;
+  padding: 20px 20px 20px;
   text-align: left;
   font-size: 26px;
 }
@@ -88,12 +89,12 @@ body {
 
 /* education */
 .longer {
-  width: 77.8%;
+  width: 77.4%;
 }
 
 /* work */
 .shorter {
-  width: 73.6%;
+  width: 73.2%;
 }
 
 .container {
@@ -126,12 +127,29 @@ body {
   text-align: left;
 }
 
+.program.modul {
+  flex: 60%;
+}
+
+.program.modul + .duration {
+  flex: 40%;
+}
+
 .full-width {
   flex: 100%;
 }
 
 .modul {
   font-weight: 700;
+}
+
+#work ul {
+  margin: 0;
+  padding-left: 25px;
+}
+
+#work li {
+  padding: 0 0 10px 5px;
 }
 
 li {
