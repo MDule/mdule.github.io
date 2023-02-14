@@ -118,6 +118,10 @@ a:hover {
   transform: translate(-22px, -0px);
 }
 
+.bx3 {
+  transform: translate(-45px, -0px);
+}
+
 .title {
   padding: 20px 23.328px 20px;
   text-align: left;
