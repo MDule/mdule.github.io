@@ -105,8 +105,17 @@ a:hover {
   height: 70px;
 }
 
-#black-box.bx1 {
+.bx1 {
   transform: translate(-45px, -90px);
+}
+
+.accent-bx {
+  filter: invert(56%) sepia(6%) saturate(2990%) hue-rotate(136deg)
+    brightness(91%) contrast(87%);
+}
+
+.bx2 {
+  transform: translate(-22px, -0px);
 }
 
 .title {
