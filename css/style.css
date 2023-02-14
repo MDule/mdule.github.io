@@ -137,12 +137,16 @@ a:hover {
 
 /* education */
 .longer {
-  width: 78.8%;
+  width: 78.6%;
 }
 
 /* work */
 .shorter {
-  width: 74.6%;
+  width: 74.5%;
+}
+
+.shorter2 {
+  width: 87.7%;
 }
 
 .container {
