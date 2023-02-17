@@ -122,31 +122,27 @@ a:hover {
   transform: translate(-45px, -0px);
 }
 
+.flex {
+  display: flex;
+}
+
+.flex:first-child {
+  flex: 0 1 auto;
+}
+
 .title {
-  padding: 20px 23.328px 20px;
+  padding: 20px 0 20px 23.328px;
   text-align: left;
   font-size: 26px;
 }
 
 /* line thinghy */
-.title > span {
-  display: inline-block;
+.border {
+  flex: 1 1 auto;
   margin-left: 6px;
   border-bottom: 1px solid black;
-}
-
-/* education */
-.longer {
-  width: 78.6%;
-}
-
-/* work */
-.shorter {
-  width: 74.5%;
-}
-
-.shorter2 {
-  width: 87.7%;
+  margin-bottom: 20px;
+  margin-right: 10px;
 }
 
 .container {
