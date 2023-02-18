@@ -160,6 +160,10 @@ a:hover {
   padding-bottom: 7px;
 }
 
+.institution.one-line {
+  flex: 100%;
+}
+
 .duration,
 .place {
   color: var(--accent-color);
