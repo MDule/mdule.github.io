@@ -216,11 +216,11 @@ li {
 }
 
 .skill-desc {
-  flex: 4 4 80%;
+  flex: 1 1 80%;
 }
 
 .skill-desc-shorter {
-  flex: 4 4 40%;
+  flex: 1 1 40%;
 }
 
 .dot {
