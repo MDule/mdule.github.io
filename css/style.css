@@ -249,3 +249,11 @@ li {
 #skills p {
   padding-bottom: 5px;
 }
+
+.sf-projects {
+  padding-top: 10px;
+}
+
+.sf-projects > li {
+  padding: 5px 0;
+}
