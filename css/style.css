@@ -152,6 +152,7 @@ a:hover {
   color: var(--lighter-text);
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .institution {
@@ -303,9 +304,17 @@ li {
     text-align: center;
   }
 
+  .bx2 {
+    transform: translate(-22px);
+  }
+
   .bx3 {
-    /* transform: translate(-482px); */
     display: inline-block;
+    transform: translate(-45px);
+  }
+
+  .bx4 {
+    transform: translate(-33px);
   }
 
   #header-right p {
@@ -315,5 +324,53 @@ li {
 
   #header-right img {
     height: 30px;
+  }
+}
+
+@media only screen and (max-width: 665px) {
+  #skills.container {
+    display: block;
+  }
+
+  #skills,
+  #skills p {
+    text-align: center;
+  }
+
+  #skills > img {
+    display: block;
+  }
+
+  #skills > p {
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 482px) {
+  .institution,
+  .duration {
+    flex: auto;
+  }
+
+  #work-3 {
+    display: block;
+  }
+
+  #skills,
+  #ita-container {
+    display: block;
+  }
+
+  #skills,
+  #skills p {
+    text-align: center;
+  }
+
+  #skills > img {
+    display: block;
+  }
+
+  #skills > p {
+    padding: 5px;
   }
 }
