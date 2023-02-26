@@ -261,3 +261,18 @@ li {
 .tags {
   padding-top: 10px;
 }
+
+#info-container {
+  justify-content: center;
+}
+
+.bordered {
+  flex: 0 0 30%;
+  justify-content: center;
+  border: 1px solid var(--dark-color);
+  border-radius: 7px;
+  padding: 7px 12px;
+  margin-inline: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
