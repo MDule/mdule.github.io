@@ -257,3 +257,7 @@ li {
 .sf-projects > li {
   padding: 5px 0;
 }
+
+.tags {
+  padding-top: 10px;
+}
