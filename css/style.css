@@ -473,39 +473,9 @@ li {
   #skills > p {
     padding: 5px;
   }
-}
-
-@media only screen and (max-width: 614px) {
-  .extra-bx {
-    transform: translate(-45px, -110px);
-  }
-}
-
-@media only screen and (max-width: 612px) {
-  .extra-bx {
-    transform: translate(-45px, -118px);
-  }
-}
-
-@media only screen and (max-width: 532px) {
-  .extra-bx {
-    transform: translate(-45px, -128px);
-  }
-}
-
-@media only screen and (max-width: 511px) {
-  .cert-bx {
-    transform: translate(-46px, -17px);
-  }
 
   .extra-bx {
-    transform: translate(-45px, -136px);
-  }
-}
-
-@media only screen and (max-width: 486px) {
-  .extra-bx {
-    transform: translate(-45px, -145px);
+    transform: translate(-45px, 0);
   }
 }
 
@@ -544,9 +514,5 @@ li {
   #project-container p,
   #extra-container p {
     padding-bottom: 10px;
-  }
-
-  .extra-bx {
-    transform: translate(-45px, 0);
   }
 }
