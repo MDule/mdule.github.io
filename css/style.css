@@ -115,12 +115,38 @@ a:hover {
     brightness(91%) contrast(87%);
 }
 
-.bx2 {
-  transform: translate(-22px, -0px);
+.work-bx {
+  transform: translateX(-23px);
 }
 
-.bx3 {
-  transform: translate(-35px, -0px);
+.skills-bx {
+  transform: translate(-45px, -45px);
+}
+
+.edu-bx,
+.cert-bx {
+  transform: translate(-46px, -5px);
+}
+
+.proj-bx {
+  transform: translate(-45px, -15px);
+}
+
+.extra-bx {
+  transform: translate(-45px, -60px);
+}
+
+.papers-bx {
+  transform: translate(-45px, 0px);
+}
+
+.bx2 {
+  transform: translate(-45px, -0px);
+}
+
+.bx3,
+.bx4 {
+  transform: translate(-35px, 3px);
 }
 
 .flex {
@@ -159,7 +185,7 @@ a:hover {
   flex: 70%;
   font-size: 20px;
   font-weight: 600;
-  padding-bottom: 7px;
+  padding: 5px 0;
 }
 
 .institution.one-line {
@@ -177,7 +203,7 @@ a:hover {
 .program {
   flex: 50%;
   font-size: 16px;
-  padding-bottom: 10px;
+  padding: 5px 0 5px 0;
   text-align: left;
 }
 
@@ -304,13 +330,23 @@ li {
     text-align: center;
   }
 
+  #work > .flex > h2,
+  #skills > .flex > h2,
+  #education > .flex > h2,
+  #certificates > .flex > h2,
+  #projects > .flex > h2,
+  #extracurricular > .flex > h2,
+  #papers > .flex > h2 {
+    flex: 0 1 auto;
+  }
+
   .bx2 {
     transform: translate(-22px);
   }
 
-  .bx3 {
+  .skills-bx {
     display: inline-block;
-    transform: translate(-45px);
+    transform: translate(-45px, -45px);
   }
 
   .bx4 {
@@ -318,16 +354,108 @@ li {
   }
 
   #header-right p {
-    padding: 25px 0;
+    padding: 25px 0 0;
     flex: 1 1 auto;
   }
 
   #header-right img {
     height: 30px;
   }
+
+  #other-info > div > h2 {
+    padding: 0 0 20px 0;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 856px) {
+  .extra-bx {
+    transform: translate(-45px, -72px);
+  }
+}
+
+@media only screen and (max-width: 851px) {
+  .extra-bx {
+    transform: translate(-45px, -80px);
+  }
+}
+
+@media only screen and (max-width: 829px) {
+  .bordered {
+    flex: 0 0 auto;
+  }
+}
+
+@media only screen and (max-width: 757px) {
+  .extra-bx {
+    transform: translate(-45px, -90px);
+  }
+}
+
+@media only screen and (max-width: 695px) {
+  .extra-bx {
+    transform: translate(-45px, -100px);
+  }
 }
 
 @media only screen and (max-width: 665px) {
+  div[id*="work-"],
+  #ita-container,
+  #msc-container,
+  #bsc-container,
+  #cert1-container,
+  #cert2-container,
+  #proj-invoice,
+  #proj-img2pdf,
+  #proj-pdfparser,
+  #extra-container {
+    display: block;
+  }
+
+  div[id*="work-"] > .institution,
+  .place,
+  .program.modul,
+  .duration,
+  #ita-container > .institution,
+  .place,
+  .program.modul,
+  .duration,
+  .program,
+  #msc-container > .institution,
+  .place,
+  .program.modul,
+  .duration,
+  .program,
+  #bsc-container > .institution,
+  .place,
+  .program.modul,
+  .duration,
+  .program,
+  #cert1-container > .institution,
+  .program.modul,
+  .duration,
+  .program,
+  #cert2-container > .institution,
+  .program.modul,
+  .duration,
+  .program,
+  #proj-invoice > .institution,
+  .duration,
+  .program,
+  #proj-img2pdf > .institution,
+  .duration,
+  .program,
+  #proj-pdfparser > .institution,
+  .duration,
+  .program,
+  #extra-container > .institution,
+  .place,
+  .program.modul,
+  .duration {
+    text-align: center;
+    padding-bottom: 5px;
+  }
+
   #skills.container {
     display: block;
   }
@@ -339,10 +467,45 @@ li {
 
   #skills > img {
     display: block;
+    transform: translate(-45px, 0px);
   }
 
   #skills > p {
     padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 614px) {
+  .extra-bx {
+    transform: translate(-45px, -110px);
+  }
+}
+
+@media only screen and (max-width: 612px) {
+  .extra-bx {
+    transform: translate(-45px, -118px);
+  }
+}
+
+@media only screen and (max-width: 532px) {
+  .extra-bx {
+    transform: translate(-45px, -128px);
+  }
+}
+
+@media only screen and (max-width: 511px) {
+  .cert-bx {
+    transform: translate(-46px, -17px);
+  }
+
+  .extra-bx {
+    transform: translate(-45px, -136px);
+  }
+}
+
+@media only screen and (max-width: 486px) {
+  .extra-bx {
+    transform: translate(-45px, -145px);
   }
 }
 
@@ -357,12 +520,16 @@ li {
   }
 
   #skills,
-  #ita-container {
+  #ita-container,
+  #project-container,
+  #extra-container {
     display: block;
   }
 
   #skills,
-  #skills p {
+  #skills p,
+  #project-container p,
+  #extra-container p {
     text-align: center;
   }
 
@@ -372,5 +539,14 @@ li {
 
   #skills > p {
     padding: 5px;
+  }
+
+  #project-container p,
+  #extra-container p {
+    padding-bottom: 10px;
+  }
+
+  .extra-bx {
+    transform: translate(-45px, 0);
   }
 }
