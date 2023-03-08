@@ -109,11 +109,13 @@ a:visited {
 
 #hero-h-m {
   flex: 0 0 33.33%;
-}
-
-#hero-h-m {
   flex-direction: row;
   justify-content: center;
+}
+
+#hero-h-m > img {
+  border: 3px solid var(--accent-light);
+  border-radius: 50%;
 }
 
 #hero-h-r {
@@ -185,4 +187,21 @@ section > a:visited {
 .card-subtitle {
   padding-bottom: .4rem;
   font-weight: 600;
+}
+
+.card-details {
+  display: flex;
+  align-items:center;
+  column-gap: .5rem;
+  padding-bottom: 1rem;
+}
+
+.card-details > p {
+  font-size: 1.4rem;
+  padding-right: 2rem;
+  color: var(--grey-out-clr);
+}
+
+.card-text {
+  padding-left: 2rem;
 }
