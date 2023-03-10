@@ -323,3 +323,7 @@ a.verify-link {
 .github-button > p {
   color: #fff;
 }
+
+.nested-ul > li {
+  list-style-type: disc;
+}
