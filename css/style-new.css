@@ -16,6 +16,7 @@
 html {
   font-size: 10px;
   background-color: rgba(0, 0, 0, 0.2);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -155,6 +156,11 @@ a:hover {
 
 #primary-nav ul li a:hover {
   color: var(--accent-light);
+}
+
+#primary-nav ul li a.active {
+  color: var(--accent-light);
+  font-weight: 600;
 }
 
 #work-exp,
