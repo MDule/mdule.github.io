@@ -17,12 +17,14 @@ html {
   font-size: 10px;
   background-color: rgba(0, 0, 0, 0.2);
   scroll-behavior: smooth;
+  scroll-padding-top: 3.8rem;
 }
 
 body {
   max-width: 100rem;
   margin: 0 auto;
   background-color: #fff;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
 }
 
 body,
@@ -140,6 +142,8 @@ a:hover {
   background-color: var(--nav-fill);
   border-bottom: 0.1rem solid black;
   filter: var(--fil-drop-sh);
+  position: sticky;
+  top: 0;
 }
 
 #primary-nav ul {
@@ -163,14 +167,7 @@ a:hover {
   font-weight: 600;
 }
 
-#work-exp,
-#skills,
-#education,
-#certificates,
-#projects,
-#extra-curricular,
-#papers,
-#other {
+.section-flex {
   display: flex;
   flex-direction: column;
   row-gap: 1.6rem;
@@ -184,14 +181,7 @@ section > a:visited {
   color: var(--accent-light);
 }
 
-#work-exp-title,
-#skills-title,
-#education-title,
-#certificates-title,
-#projects-title,
-#extra-curricular-title,
-#papers-title,
-#other-title {
+.section-title {
   display: flex;
   row-gap: 1.6rem;
   column-gap: 0.8rem;
