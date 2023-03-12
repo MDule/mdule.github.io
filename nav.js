@@ -12,7 +12,7 @@ function navHighlighter() {
   // Now we loop through sections to get height, top and ID values for each
   sections.forEach(current => {
     const sectionHeight = current.offsetHeight;
-    const sectionTop = current.offsetTop - 45; // 38 height of primary nav
+    const sectionTop = current.offsetTop - 65; // 38 height of primary nav, 45 def
     const sectionId = current.getAttribute("id");
     
     /*
