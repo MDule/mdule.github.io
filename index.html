@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="sr">
   <head>
+    <!-- standard -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Dušan Miletić CV" />
@@ -22,7 +23,7 @@
       content="Read Dušan Miletić's curriculum vitae."
     />
     <meta property="og:locale" content="sr_Latn_RS" />
-    <!-- twitter meta tags -->
+    <!-- twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content="mdule.github.io" />
     <meta property="twitter:url" content="https://mdule.github.io/" />
@@ -37,485 +38,715 @@
     />
     <!-- css -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- scripts -->
+    <script src="nav.js" defer></script>
+    <!-- title -->
     <title>Dušan Miletić - CV</title>
   </head>
 
   <body>
-    <!-- three columns -->
-    <div id="container-header">
-      <!-- personal info -->
-      <div id="header-left">
-        <img id="black-box" class="bx4" src="imgs/black-box.svg" alt="" />
-        <h1>Dušan Miletić</h1>
-        <h2>Python developer</h2>
-        <p>
-          Motivisana, odgovorna i organizovana osoba sa okom za detalje spremna
-          da prihvati svaki profesionalni izazov.
-        </p>
-      </div>
-      <!-- end header-left-->
-      <!-- picture -->
-      <div id="header-middle">
-        <img src="imgs/dusan-miletic.png" alt="Dušan Miletić CV slika" />
-      </div>
-      <!-- end header-middle-->
-      <!-- contact detail -->
-      <div id="header-right">
-        <p id="email">
-          <a href="mailto:dusanmiletic@hotmail.com">dmiletic@pyxl-it.com</a>
-          <img
-            id="envelope"
-            src="imgs/envelope-solid.svg"
-            alt="Email address icon"
-          />
-        </p>
-        <p>
-          <a href="tel:+381643738873">+381 64 373 88 73</a>
-          <img
-            id="phone"
-            src="imgs/mobile-screen-button-solid.svg"
-            alt="Phone number icon"
-          />
-        </p>
-        <p>
-          18-03-1992
-          <img
-            id="calender"
-            src="imgs/calendar-days-regular.svg"
-            alt="Calender icon"
-          />
-        </p>
-
-        <p>
-          <a href="https://github.com/MDule">github.com/mdule</a>
-          <img id="git" src="imgs/github.svg" alt="Github icon" />
-        </p>
-        <p>
-          <a href="#">linkedin</a>
-          <img id="linkedin" src="imgs/linkedin.svg" alt="Linkedin icon" />
-        </p>
-      </div>
-      <!-- end header-right-->
-    </div>
-
-    <!-- end container-header-->
-
-    <main>
-      <!-- work section -->
-      <section id="work">
-        <div class="flex">
-          <h2 class="title">RADNO ISKUSTVO</h2>
-          <span class="border"></span>
+    <header>
+      <!-- top header -->
+      <div id="top-h">
+        <a id="download-cv" href="#" target="_blank" rel="noopener noreferrer"
+          ><button id="download-cv-btn">
+            <img src="imgs/download.png" alt="Download CV" width="14" />
+            <p>Preuzmi CV</p>
+          </button></a
+        >
+        <div id="lang-bar">
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            ><button id="sr">
+              <p>SR</p>
+              <img src="imgs/sr.png" alt="Srpski jezik" width="27" /></button
+          ></a>
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            ><button id="en">
+              <p>EN</p>
+              <img src="imgs/us.png" alt="English" width="27" /></button
+          ></a>
         </div>
-
-        <img
-          id="black-box"
-          class="work-bx accent-bx"
-          src="imgs/black-box.svg"
-          alt=""
-        />
-
-        <!-- work 1 latest -->
-        <div id="work-1" class="container">
-          <p class="institution">PYXL</p>
-          <p class="place">Beograd, R. Srbija</p>
-          <p class="program modul">Python developer (osnivač)</p>
-          <p class="duration">Jun 2022 - u toku</p>
-          <ul>
-            <li class="program">
+      </div>
+      <!-- hero-h -->
+      <div id="hero-h">
+        <!-- name & desc -->
+        <div id="hero-h-l">
+          <h1 id="name">Dušan Miletić</h1>
+          <h2 id="developer">Python developer</h2>
+          <p id="my-desc">
+            Motivisana, odgovorna i organizovana osoba sa okom za detalje,
+            spremna da prihvati svaki profesionalni izazov.
+          </p>
+        </div>
+        <!-- photo -->
+        <div id="hero-h-m">
+          <img
+            src="imgs/dusan-miletic.png"
+            alt="Dušan Miletić fotografija"
+            width="173"
+            height="173"
+          />
+        </div>
+        <!-- contact -->
+        <div id="hero-h-r">
+          <a
+            id="website"
+            href="https://pyxl-it.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p>pyxl-it.com</p>
+            <img src="imgs/website.png" alt="pyxl-it.com icon" width="27" />
+          </a>
+          <a
+            id="email"
+            href="mailto:dmiletic@pyxl-it.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p>dmiletic@pyxl-it.com</p>
+            <img src="imgs/email.png" alt="email icon" width="27" />
+          </a>
+          <a
+            id="github"
+            href="https://github.com/mdule"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p>github.com/mdule</p>
+            <img src="imgs/github.png" alt="github.com icon" width="27" />
+          </a>
+          <a id="linkedin" href="#" target="_blank" rel="noopener noreferrer">
+            <p>linkedin.com/in/mdule</p>
+            <img src="imgs/linkedin.png" alt="linkedin.com icon" width="27" />
+          </a>
+          <a
+            id="mobile"
+            href="tel:+381643738873"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p>+381 64 373 88 73</p>
+            <img src="imgs/mobile.png" alt="mobile phone icon" width="27" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <nav id="primary-nav">
+        <ul>
+          <li><a href="#work-experience">Radno iskustvo</a></li>
+          <li><a href="#skills">Veštine</a></li>
+          <li><a href="#education">Obrazovanje</a></li>
+          <li><a href="#certificates">Sertifikati</a></li>
+          <li><a href="#projects">Projekti</a></li>
+          <li><a href="#extra-curricular">Vannastavne aktivnosti</a></li>
+          <li><a href="#papers">Radovi</a></li>
+          <li><a href="#other">Ostalo</a></li>
+        </ul>
+      </nav>
+      <section id="work-experience" class="section-flex">
+        <a href="#work-experience" id="work-exp-title" class="section-title">
+          <img
+            src="imgs/work-icon.png"
+            alt="Work icon"
+            width="27"
+            height="27"
+          />
+          <h2>Radno iskustvo</h2>
+        </a>
+        <!-- pyxl -->
+        <div class="card">
+          <h3 class="card-title">Pyxl</h3>
+          <h4 class="card-subtitle">Python developer</h4>
+          <span class="card-details">
+            <img
+              src="imgs/calender-icon.png"
+              alt="Total time worked"
+              width="16"
+              height="16"
+            />
+            <p>Jun 2022 - u toku</p>
+            <img
+              src="imgs/location-icon.png"
+              alt="Work location"
+              width="16"
+              height="16"
+            />
+            <p>Beograd, R. Srbija</p>
+          </span>
+          <ul class="card-text">
+            <li>
               Kompletna izrada web sajtova i web aplikacijа. Od izrade skice i
               wireframe-a (Figma, Affinity Designer), kodiranja frontend-a
               (HTML5, CSS3) do izrade backend-a pomoću Django i Flask
               framework-a
             </li>
-            <li class="program">
+            <li>
               Razvoj i kodiranje izgleda web sajta korišćenjem HTML5 i CSS3
               (frontend)
             </li>
-            <li class="program">
+            <li>
               Razvoj i kodiranje potrebnih funkcionalnosti korišćenjem Django i
               Flask framework-ovа (backend)
             </li>
-            <li class="program">
-              Izrada desktop aplikacija korišćenjem Tkinter biblioteke
-            </li>
-            <li class="program">
+            <li>Izrada desktop aplikacija korišćenjem Tkinter biblioteke</li>
+            <li>
               Izrada RESTful API i povezivanje sa bazama podataka (SQlite,
               MySQL, MongoDB)
             </li>
           </ul>
         </div>
-        <!-- end work-1  -->
-
-        <!-- work 2 -->
-        <div id="work-2" class="container">
-          <p class="institution">DUOCAR</p>
-          <p class="place">Beograd, R. Srbija</p>
-          <p class="program modul">
+        <!-- dc -->
+        <div class="card">
+          <h3 class="card-title">Duocar</h3>
+          <h4 class="card-subtitle">
             Saobraćajni inženjer i procenitelj šteta na vozilima (osnivač)
-          </p>
-          <p class="duration">Feb 2019 - Jun 2021</p>
-          <ul>
-            <li class="program">
+          </h4>
+          <span class="card-details">
+            <img
+              src="imgs/calender-icon.png"
+              alt="Total time worked"
+              width="16"
+              height="16"
+            />
+            <p>Feb 2019 - Jun 2021</p>
+            <img
+              src="imgs/location-icon.png"
+              alt="Work location"
+              width="16"
+              height="16"
+            />
+            <p>Beograd, R. Srbija</p>
+          </span>
+          <ul class="card-text">
+            <li>
               Razvoj relacione baze podataka sa korisničkim interfejsom (UI)
               radi efikasnog upravljanja korisničkim zahtevima i praćenja
               pokazatelja toka obrade zahteva (izrađena u MS Access-u uz
               korišćenje različitih dodatnih VBA skripti)
             </li>
-            <li class="program">
+            <li>
               Prijem klijenata i obrada zahteva sa unosom podataka u
               informacioni sistem i fotografisanje oštećenja na vozilima u svrhu
               izrade nalaza i mišljenja o visini štete na vozilima
             </li>
-            <li class="program">
+            <li>
               Komunikacija sa osiguravajućim društvima radi uspešnog i efikasnog
               rešavanja odštetnog zahteva
             </li>
-            <li class="program">
+            <li>
               Rad sa pravnom službom u funkciji stručnog savetnika u sudskim
               predmetima naknade materijalne štete na vozilima
             </li>
           </ul>
         </div>
-        <!-- end work-2  -->
-
-        <!-- work 3 -->
-        <div id="work-3" class="container">
-          <p class="institution">GENERALI OSIGURANJE SRBIJA</p>
-          <p class="place">Bor, R. Srbija</p>
-          <p class="program modul">
+        <!-- generali -->
+        <div class="card">
+          <h3 class="card-title">Generali osiguranje Srbija</h3>
+          <h4 class="card-subtitle">
             Bankassurance - sektor životnih osiguranja
-          </p>
-          <p class="duration">Apr 2018 - Apr 2019</p>
-          <ul>
-            <li class="program">
+          </h4>
+          <span class="card-details">
+            <img
+              src="imgs/calender-icon.png"
+              alt="Total time worked"
+              width="16"
+              height="16"
+            />
+            <p>Apr 2018 - Apr 2019</p>
+            <img
+              src="imgs/location-icon.png"
+              alt="Work location"
+              width="16"
+              height="16"
+            />
+            <p>Bor, R. Srbija</p>
+          </span>
+          <ul class="card-text">
+            <li>
               Upoznavanje klijenata sa različitim vrstama životnih osiguranja,
               komunikacija sa klijentima i pružanje pomoći u prevazilaženju
               različitih problema
             </li>
-            <li class="program">
-              Ugovaranje i prodaja polisa životnih osiguranja
-            </li>
-            <li class="program">
-              Priprema dokumentacije za sektor procene rizika
+            <li>Ugovaranje i prodaja polisa životnih osiguranja</li>
+            <li>Priprema dokumentacije za sektor procene rizika</li>
+          </ul>
+        </div>
+      </section>
+      <section id="skills" class="section-flex">
+        <a href="#skills" id="skills-title" class="section-title">
+          <img
+            src="imgs/skills-icon.png"
+            alt="Skills icon"
+            width="27"
+            height="27"
+          />
+          <h2>Veštine</h2>
+        </a>
+        <div class="card">
+          <div class="card-skills">
+            <p class="category">Programski jezici</p>
+            <p class="item">Python</p>
+            <p class="category">Back-end</p>
+            <p class="item">Django, Flask, REST API</p>
+            <p class="category">Front-end</p>
+            <p class="item">HTML5, CSS3, Figma, Affinity Designer</p>
+            <p class="category">Baze podataka</p>
+            <p class="item">SQLite, MySQL</p>
+            <p class="category">DevOps</p>
+            <p class="item">Git, Jenkins</p>
+            <p class="category">Project management</p>
+            <p class="item">Jira</p>
+            <p class="category">Jezici</p>
+            <!-- lang eng -->
+            <div class="lang-container">
+              <p class="item">Engleski jezik</p>
+              <span class="dots">
+                <span class="dot black"></span>
+                <span class="dot black"></span>
+                <span class="dot black"></span>
+                <span class="dot black"></span>
+                <span class="dot black"></span>
+              </span>
+              <!-- lang german -->
+              <p class="item">Nemački jezik</p>
+              <span class="dots">
+                <span class="dot black"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="education" class="section-flex">
+        <a href="#education" id="education-title" class="section-title">
+          <img
+            src="imgs/education-icon.png"
+            alt="Education icon"
+            width="27"
+            height="27"
+          />
+          <h2>Obrazovanje</h2>
+        </a>
+        <!-- ita -->
+        <div class="card">
+          <h3 class="card-title">IT Academy</h3>
+          <h4 class="card-subtitle">Python Development Program</h4>
+          <span class="card-details">
+            <img
+              src="imgs/calender-icon.png"
+              alt="Total time worked"
+              width="16"
+              height="16"
+            />
+            <p>Jan 2022 - Jan 2023</p>
+            <img
+              src="imgs/location-icon.png"
+              alt="Work location"
+              width="16"
+              height="16"
+            />
+            <p>Beograd, R. Srbija</p>
+          </span>
+          <ul class="card-text">
+            <li>Certified Python Developer</li>
+          </ul>
+        </div>
+        <!-- sf msc -->
+        <div class="card">
+          <h3 class="card-title">Saobraćajni fakultet</h3>
+          <h4 class="card-subtitle">Bezbednost drumskog saobraćaja</h4>
+          <span class="card-details">
+            <img
+              src="imgs/calender-icon.png"
+              alt="Total time worked"
+              width="16"
+              height="16"
+            />
+            <p>Okt 2015 - Sep 2016</p>
+            <img
+              src="imgs/location-icon.png"
+              alt="Work location"
+              width="16"
+              height="16"
+            />
+            <p>Beograd, R. Srbija</p>
+          </span>
+          <ul class="card-text">
+            <li>Master saobraćajni inženjer (prosečna ocena 9.86)</li>
+            <li>
+              Tema master rada: Analiza mogućnosti unapređenja bezbednosti
+              starih lica u gradu Beogradu
             </li>
           </ul>
         </div>
-        <!-- end work-3 -->
-      </section>
-      <!-- end work section -->
-
-      <!-- skills section -->
-      <section id="skills">
-        <div class="flex">
-          <h2 class="title">VEŠTINE</h2>
-          <span class="border"></span>
-        </div>
-
-        <div id="skills" class="container">
-          <img
-            id="black-box"
-            class="skills-bx accent-bx"
-            src="imgs/black-box.svg"
-            alt=""
-          />
-          <!-- programming languages -->
-          <p class="skill">Programski jezici</p>
-          <p class="skill-desc">Python</p>
-          <!-- backend -->
-          <p class="skill">Back-end</p>
-          <p class="skill-desc">Django, Flask, REST API</p>
-          <!-- frontend -->
-          <p class="skill">Front-end</p>
-          <p class="skill-desc">HTML5, CSS3, Figma, Affinity Designer</p>
-          <!-- db -->
-          <p class="skill">Baze podataka</p>
-          <p class="skill-desc">SQlite, MySQL</p>
-          <!-- devops -->
-          <p class="skill">DevOps</p>
-          <p class="skill-desc">Git, Jenkins</p>
-          <!-- project management -->
-          <p class="skill">Project management</p>
-          <p class="skill-desc">Jira</p>
-          <!-- jezici -->
-          <p class="skill">Jezici</p>
-          <p class="skill-desc-shorter">
-            Engleski jezik<span class="dot"></span><span class="dot"></span
-            ><span class="dot"></span><span class="dot"></span
-            ><span class="dot dotw"></span>
-          </p>
-          <p class="skill-desc-shorter">
-            Nemački jezik<span class="dot"></span><span class="dot dotw"></span
-            ><span class="dot dotw"></span><span class="dot dotw"></span
-            ><span class="dot dotw"></span>
-          </p>
-        </div>
-      </section>
-      <!-- end skills section -->
-
-      <!-- education -->
-      <section id="education">
-        <div class="flex">
-          <h2 class="title">OBRAZOVANJE</h2>
-          <span class="border"></span>
-        </div>
-
-        <div id="ita-container" class="container">
-          <img
-            id="black-box"
-            class="edu-bx accent-bx"
-            src="imgs/black-box.svg"
-            alt=""
-          />
-          <p class="institution">IT Academy, Link Group</p>
-          <p class="place">Beograd, R. Srbija</p>
-          <p class="program modul">Python Development Program</p>
-          <p class="duration">Jan 2022 - Jan 2023</p>
-          <li class="program">
-            Certified Python developer
-            <a
-              href="https://www.link-group.eu/certificate/index.php?certNo=029183"
-              target="_blank"
-              rel="noopener noreferrer"
-              >(Link Group verification link)</a
-            >
-          </li>
-        </div>
-        <!-- end ita container-->
-
-        <!-- fakultet master -->
-        <div id="msc-container" class="container">
-          <p class="institution">
-            Saobraćajni fakultet, Univerzitet u Beogradu
-          </p>
-          <p class="place">Beograd, R. Srbija</p>
-          <p class="program modul">Bezbednost drumskog saobraćaja</p>
-          <p class="duration">Okt 2015 - Sep 2016</p>
-          <li class="program full-width">
-            Master saobraćajni inženjer (prosečna ocena 9.86)
-          </li>
-          <li class="program full-width">
-            Tema master rada: Analiza mogućnosti unapređenja bezbednosti starih
-            lica u gradu Beogradu
-          </li>
-        </div>
-        <!-- end master container-->
-
-        <!-- fakultet bsc -->
-        <div id="bsc-container" class="container">
-          <p class="institution">
-            Saobraćajni fakultet, Univerzitet u Beogradu
-          </p>
-          <p class="place">Beograd, R. Srbija</p>
-          <p class="program modul">
+        <!-- sf bsc -->
+        <div class="card">
+          <h3 class="card-title">Saobraćajni fakultet</h3>
+          <h4 class="card-subtitle">
             Drumski saobraćaj i transport - Bezbednost
-          </p>
-          <p class="duration">Sep 2011 - Sep 2015</p>
-          <li class="program full-width">
-            Diplomirani saobraćajni inženjer (prosečna ocena 9.17)
-          </li>
-          <li class="program full-width">
-            Tema završnog rada: Modeli predikcije saobraćajnih nezgoda
-          </li>
+          </h4>
+          <span class="card-details">
+            <img
+              src="imgs/calender-icon.png"
+              alt="Total time worked"
+              width="16"
+              height="16"
+            />
+            <p>Sep 2011 - Sep 2015</p>
+            <img
+              src="imgs/location-icon.png"
+              alt="Work location"
+              width="16"
+              height="16"
+            />
+            <p>Beograd, R. Srbija</p>
+          </span>
+          <ul class="card-text">
+            <li>Diplomirani saobraćajni inženjer (prosečna ocena 9.17)</li>
+            <li>Tema završnog rada: Modeli predikcije saobraćajnih nezgoda</li>
+          </ul>
         </div>
-        <!-- end bsc container-->
       </section>
-      <!-- end education-->
-
-      <!-- certificates - mozda odmah nakon obrazovanja ? -->
-      <section id="certificates">
-        <div class="flex">
-          <h2 class="title">SERTIFIKATI</h2>
-          <span class="border"></span>
-        </div>
-        <!-- certificate 1 -->
-        <div id="cert1-container" class="container">
+      <section id="certificates" class="section-flex">
+        <a href="#certificates" id="certificates-title" class="section-title">
           <img
-            id="black-box"
-            class="cert-bx accent-bx"
-            src="imgs/black-box.svg"
-            alt=""
+            src="imgs/certificate-icon.png"
+            alt="Certificate icon"
+            width="27"
+            height="27"
           />
-          <p class="institution">
-            PCEP - Certified Entry-Level Python Programmer
-          </p>
-          <p class="program modul">Python Institute</p>
-          <p class="duration">Feb 2023</p>
-          <li class="program">
-            <a href="#" target="_blank" rel="noopener noreferrer"
-              >Certificate verification</a
-            >
-          </li>
-        </div>
-        <!-- end certificate1 -->
-
-        <!-- certificate 2 -->
-        <div id="cert2-container" class="container">
-          <p class="institution">Certified Python Developer</p>
-          <p class="program modul">IT Academy</p>
-          <p class="duration">Jan 2023</p>
-          <li class="program">
+          <h2>Sertifikati</h2>
+        </a>
+        <!-- pcep -->
+        <div class="card">
+          <h3 class="card-title">
+            PCEP - Certified Entry&#8209;Level Python programmer
+          </h3>
+          <h4 class="card-subtitle">Python Institute</h4>
+          <span class="card-details">
+            <img
+              src="imgs/calender-icon.png"
+              alt="Total time worked"
+              width="16"
+              height="16"
+            />
+            <p>Mart 2023</p>
+            <img
+              src="imgs/link-out.png"
+              alt="Work location"
+              width="16"
+              height="16"
+            />
             <a
+              class="verify-link"
+              href="http://#"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><p>Verifikacioni link</p>
+            </a>
+          </span>
+        </div>
+        <!-- ita -->
+        <div class="card">
+          <h3 class="card-title">Certified Python Developer</h3>
+          <h4 class="card-subtitle">IT Academy</h4>
+          <span class="card-details">
+            <img
+              src="imgs/calender-icon.png"
+              alt="Total time worked"
+              width="16"
+              height="16"
+            />
+            <p>Jan 2023</p>
+            <img
+              src="imgs/location-icon.png"
+              alt="Work location"
+              width="16"
+              height="16"
+            />
+            <p>Beograd, R. Srbija</p>
+            <img
+              src="imgs/link-out.png"
+              alt="Work location"
+              width="16"
+              height="16"
+            />
+            <a
+              class="verify-link"
               href="https://www.link-group.eu/certificate/index.php?certNo=029183"
               target="_blank"
               rel="noopener noreferrer"
-              >Certificate verification</a
-            >
-          </li>
+              ><p>Verifikacioni link</p>
+            </a>
+          </span>
         </div>
-        <!-- end certificate2 -->
       </section>
-      <!-- end certificates -->
-
-      <!-- projects -->
-      <section id="projects">
-        <div class="flex">
-          <h2 class="title">PROJEKTI</h2>
-          <span class="border"></span>
-        </div>
-
-        <!-- project invoice -->
-        <div id="proj-invoice" class="container">
+      <section id="projects" class="section-flex">
+        <a href="#projects" id="projects-title" class="section-title">
           <img
-            id="black-box"
-            class="proj-bx accent-bx"
-            src="imgs/black-box.svg"
-            alt=""
+            src="imgs/project-icon.png"
+            alt="Projects icon"
+            width="27"
+            height="27"
           />
-          <p class="institution">Invoice app</p>
-          <p class="duration">Avg 2022</p>
-          <li class="program">
-            Desktop aplikacija za izradu faktura u PDF formatu. Izrađene fakture
-            su sačuvane u SQLite bazi podataka. Za ostale detalje, videti
-            informacije na
-            <a href="#projects" target="_blank" rel="noopener noreferrer"
-              >linku</a
-            >.
-            <p class="tags">Korišćeno: Python, Tkinter, FPDF, SQLite</p>
-          </li>
-        </div>
-        <!-- end project invoice -->
-
-        <!-- project img2pdf -->
-        <div id="proj-img2pdf" class="container">
-          <p class="institution">Image to PDF</p>
-          <p class="duration">Nov 2020</p>
-          <li class="program">
-            Automatizovana skripta koja uploaduje slike sa računara na web sajt,
-            podešava opcije za PDF (veličina papira, orijentacija, margine) i
-            preuzima PDF sa sajta. Zatim taj PDF fajl ili fajlove kompresuje
-            i/ili spaja u jedan fajl koristeći API servis (www.ilovepdf.com). Za
-            ostale detalje, videti informacije na
+          <h2>Projekti</h2>
+        </a>
+        <div class="projects-container">
+          <!-- invoice -->
+          <div class="card">
+            <h3 class="card-title">Invoice App</h3>
+            <span class="card-details">
+              <img
+                src="imgs/calender-icon.png"
+                alt="Date created"
+                width="16"
+                height="16"
+              />
+              <p>Avg 2022</p>
+            </span>
+            <p class="project-desc">
+              Desktop aplikacija za izradu faktura u PDF formatu. Izrađene
+              fakture su sačuvane u SQLite bazi podataka.
+            </p>
+            <div class="tags">
+              <p class="tag">Python</p>
+              <p class="tag">Tkinter</p>
+              <p class="tag">SQLite</p>
+              <p class="tag">FPDF</p>
+            </div>
             <a
-              href="https://github.com/MDule/Image-to-PDF"
+              class="github-button"
+              href="https://github.com/MDule/invoice-app-tk"
               target="_blank"
               rel="noopener noreferrer"
-              >linku</a
-            >.
-            <p class="tags">Korišćeno: Python, Selenium, PyWinAuto</p>
-          </li>
-        </div>
-        <!-- end project img2pdf -->
-
-        <!-- project pdfparser -->
-        <div id="proj-pdfparser" class="container">
-          <p class="institution">PDF parser (GUI app)</p>
-          <p class="duration">Oct 2020</p>
-          <li class="program">
-            PDF parser za izvlačenje podataka iz specifičnih PDF fajlova
-            (očitane saobraćajne dozvole). Aplikacija poseduje GUI koji podržava
-            drag & drop fajla, a podaci su nakon ekstrakcije smešteni u excel
-            fajl. Za ostale detalje, videti informacije na
+            >
+              <img
+                src="imgs/github-carbon.png"
+                alt="Github"
+                width="27"
+                height="27"
+              />
+              <p>GitHub</p>
+            </a>
+          </div>
+          <!-- img2pdf -->
+          <div class="card">
+            <h3 class="card-title">Image to PDF</h3>
+            <span class="card-details">
+              <img
+                src="imgs/calender-icon.png"
+                alt="Date created"
+                width="16"
+                height="16"
+              />
+              <p>Nov 2020</p>
+            </span>
+            <p class="project-desc">
+              Automatizovana skripta koja uploaduje slike sa računara na web
+              sajt, podešava opcije za PDF (veličina papira, orijentacija,
+              margine) i preuzima PDF sa sajta. Zatim taj PDF fajl ili fajlove
+              kompresuje i/ili spaja u jedan fajl koristeći API servis
+              (www.ilovepdf.com).
+            </p>
+            <div class="tags">
+              <p class="tag">Python</p>
+              <p class="tag">Selenium</p>
+              <p class="tag">PyWinAuto</p>
+              <p class="tag">API</p>
+              <p class="tag">Automation</p>
+            </div>
             <a
+              class="github-button"
+              href="https://github.com/MDule/image-to-pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="imgs/github-carbon.png"
+                alt="Github"
+                width="27"
+                height="27"
+              />
+              <p>GitHub</p>
+            </a>
+          </div>
+          <!-- pdf parser -->
+          <div class="card">
+            <h3 class="card-title">PDF parser</h3>
+            <span class="card-details">
+              <img
+                src="imgs/calender-icon.png"
+                alt="Date created"
+                width="16"
+                height="16"
+              />
+              <p>Okt 2020</p>
+            </span>
+            <p class="project-desc">
+              PDF parser za izvlačenje podataka iz specifičnih PDF fajlova
+              (očitane saobraćajne dozvole). Aplikacija poseduje GUI koji
+              podržava drag & drop fajla, a podaci su nakon ekstrakcije smešteni
+              u excel fajl.
+            </p>
+            <div class="tags">
+              <p class="tag">Python</p>
+              <p class="tag">PySimpleGUIQt</p>
+              <p class="tag">GUI</p>
+            </div>
+            <a
+              class="github-button"
               href="https://github.com/MDule/parse-pdf-gui"
               target="_blank"
               rel="noopener noreferrer"
-              >linku</a
-            >.
-            <p class="tags">Korišćeno: Python, PySimpleGUIQt</p>
-          </li>
+            >
+              <img
+                src="imgs/github-carbon.png"
+                alt="Github"
+                width="27"
+                height="27"
+              />
+              <p>GitHub</p>
+            </a>
+          </div>
         </div>
-
-        <!-- end project pdf parser-->
       </section>
-      <!-- end projects -->
-
-      <!-- extracurricular -->
-      <section id="extracurricular">
-        <div class="flex">
-          <h2 class="title">VANNASTAVNE AKTIVNOSTI</h2>
-          <span class="border"></span>
-        </div>
-
-        <!-- extra1 -->
-        <div id="extra-container" class="container">
+      <section id="extra-curricular" class="section-flex">
+        <a
+          href="#extra-curricular"
+          id="extra-curricular-title"
+          class="section-title"
+        >
           <img
-            id="black-box"
-            class="extra-bx accent-bx"
-            src="imgs/black-box.svg"
-            alt=""
+            src="imgs/extra-curricular.png"
+            alt="Work icon"
+            width="27"
+            height="27"
           />
-          <p class="institution">
+          <h2>Vannastavne aktivnosti</h2>
+        </a>
+        <!-- cesmip -->
+        <div class="card">
+          <h3 class="card-title">
             Centar za bezbednost, menadžment i međunarodnu politiku
-          </p>
-          <p class="place">Beograd, R. Srbija</p>
-          <p class="program modul">Web administrator & IT support</p>
-          <p class="duration">Sep 2017 - Nov 2020</p>
-          <ul>
-            <li class="program">
+          </h3>
+          <h4 class="card-subtitle">Web administrator & IT support</h4>
+          <span class="card-details">
+            <img
+              src="imgs/calender-icon.png"
+              alt="Total time worked"
+              width="16"
+              height="16"
+            />
+            <p>Sep 2017 - Nov 2020</p>
+            <img
+              src="imgs/location-icon.png"
+              alt="Work location"
+              width="16"
+              height="16"
+            />
+            <p>Beograd, R. Srbija</p>
+          </span>
+          <ul class="card-text">
+            <li>
               Izrada i održavanje web sajta za CeSMIP kao i posebnog web sajta
               za konferenciju EKOB 2018 (Economy in transformed security
               environment) koja je održana 01.03.2018. godine u hotelu "Palace"
               Beograd
             </li>
-            <li class="program">
+            <li>
               Član programskog odbora konferencije EKOB 2018, zadužen za
               pripremu tehničkog uputstva za pisanje radova, slanje obaveštenja
               učesnicima konferencije putem maila (održavanje mailing liste) i
               pružanje tehničke podrške naučnom odboru i drugim učesnicima
               konferencije
             </li>
-            <li class="program">
+            <li>
               Izrada materijala za konferenciju EKOB 2018 (logo, baneri,
               plakati, sertifikati i drugo)
             </li>
           </ul>
         </div>
-        <!-- end extra1 -->
-
-        <!-- extra2 -->
-        <div id="extra-container" class="container">
-          <p class="institution">BMP Konsalting</p>
-          <p class="place">Beograd, R. Srbija</p>
-          <p class="program modul">Procenitelj šteta (volonter)</p>
-          <p class="duration">Nov 2017 - Feb 2018</p>
-          <ul>
-            <li class="program">
+        <!-- dc -->
+        <div class="card">
+          <h3 class="card-title">BMP Konsalting</h3>
+          <h4 class="card-subtitle">Procenitelj šteta (volonter)</h4>
+          <span class="card-details">
+            <img
+              src="imgs/calender-icon.png"
+              alt="Total time worked"
+              width="16"
+              height="16"
+            />
+            <p>Nov 2017 - Feb 2018</p>
+            <img
+              src="imgs/location-icon.png"
+              alt="Work location"
+              width="16"
+              height="16"
+            />
+            <p>Beograd, R. Srbija</p>
+          </span>
+          <ul class="card-text">
+            <li>
               Rad na poslovima procene štete na motornim vozilima i proceni
-              vrednosti vozila. Rad sa klijentima radi prikupljanja potrebne
-              dokumentacije i fotografisanja vozila. Izrada nalaza i mišljenja o
-              visini štete na vozilu i priprema dokumentacije u vezi naknade
-              materijalne i nematerijalne štete nastale u saobraćajnim
-              nezgodama. Komunikacija sa osiguravajućim društvima radi uspešnog
-              rešavanja zahteva.
+              vrednosti vozila
+            </li>
+            <li>
+              Rad sa klijentima radi prikupljanja potrebne dokumentacije i
+              fotografisanja vozila
+            </li>
+            <li>
+              Izrada nalaza i mišljenja o visini štete na vozilu i priprema
+              dokumentacije u vezi naknade materijalne i nematerijalne štete
+              nastale u saobraćajnim nezgodama
             </li>
           </ul>
         </div>
-        <!-- end extra2 -->
-
-        <!-- extra3 -->
-        <div id="extra-container" class="container">
-          <p class="institution">Institut Saobraćajnog fakulteta u Beogradu</p>
-          <p class="place">Beograd, R. Srbija</p>
-          <p class="program modul">Saradnik (volonter)</p>
-          <p class="duration">Okt 2015 - Dec 2016</p>
-          <ul>
-            <li class="program">
+        <!-- isf -->
+        <div class="card">
+          <h3 class="card-title">Institut Saobraćajnog fakulteta</h3>
+          <h4 class="card-subtitle">Saradnik (volonter)</h4>
+          <span class="card-details">
+            <img
+              src="imgs/calender-icon.png"
+              alt="Total time worked"
+              width="16"
+              height="16"
+            />
+            <p>Okt 2015 - Dec 2016</p>
+            <img
+              src="imgs/location-icon.png"
+              alt="Work location"
+              width="16"
+              height="16"
+            />
+            <p>Beograd, R. Srbija</p>
+          </span>
+          <ul class="card-text">
+            <li>
               Saradnik na Institutu Saobraćajnog fakulteta, na Katedri za
-              bezbednost saobraćaja. Rad na naučno-istraživačkim projektima, od
-              terenskog rada i prikupljanja podataka za izradu studija do obrade
-              podataka i analize rezultata. Učestvovao u izradi 13 projekata:
-              <ul class="sf-projects">
+              bezbednost saobraćaja
+            </li>
+            <li>
+              Rad na naučno-istraživačkim projektima, od terenskog rada i
+              prikupljanja podataka za izradu studija do obrade podataka i
+              analize rezultata
+            </li>
+            <li>
+              Učestvovao u izradi 13 projekata:
+              <ul class="nested-ul">
                 <li>
                   Istraživanje indikatora performansi bezbednosti saobraćaja u
                   Srbiji za 2016. godinu (naručilac: Agencija za bezbednost
@@ -588,170 +819,134 @@
             </li>
           </ul>
         </div>
-        <!-- end extra3 -->
       </section>
-      <!-- end extracurricular -->
-
-      <!-- papers -->
-      <section id="papers">
-        <div class="flex">
-          <h2 class="title">RADOVI</h2>
-          <span class="border"></span>
-        </div>
-
-        <!-- paper-1 -->
-        <div id="project-container" class="container">
+      <section id="papers" class="section-flex">
+        <a href="#papers" id="papers-title" class="section-title">
           <img
-            id="black-box"
-            class="papers-bx accent-bx"
-            src="imgs/black-box.svg"
-            alt=""
+            src="imgs/papers-icon.png"
+            alt="Papers icon"
+            width="27"
+            height="27"
           />
-          <p class="program modul">
-            Analiza ugroženosti starijih lica u Beogradu
+          <h2>Radovi</h2>
+        </a>
+        <div class="card">
+          <p class="paper-title">
+            1. Analiza ugroženosti starijih lica u Beogradu
           </p>
-          <li class="program">
+          <p class="paper-authors">
             Miletić, D., Antić, B., Pešić, D. (2017). 12. Međunarodna
             konferencija "Bezbednost saobraćaja u lokalnoj zajednici", Tara,
             Republika Srbija.
-          </li>
-        </div>
-        <!-- end paper-1 -->
-
-        <!-- paper-2 -->
-        <div id="project-container" class="container">
-          <p class="program modul">
-            Analiza trenda indikatora bezbednosti saobraćaja koji se odnose na
-            brzinu na teritoriji policijske uprave Beograd
           </p>
-          <li class="program">
+          <p class="paper-title">
+            2. Analiza trenda indikatora bezbednosti saobraćaja koji se odnose
+            na brzinu na teritoriji policijske uprave Beograd
+          </p>
+          <p class="paper-authors">
             Pešić, D., Antić, B., Miletić, D. (2016). 13. Međunarodni simpozijum
             "Prevencija saobraćajnih nezgoda na putevima", Novi Sad, Republika
             Srbija.
-          </li>
-        </div>
-        <!-- end paper-2 -->
-
-        <!-- paper-3 -->
-        <div id="project-container" class="container">
-          <p class="program modul">
-            Obuka dece predškolskog uzrasta, studija primera - projekat
+          </p>
+          <p class="paper-title">
+            3. Obuka dece predškolskog uzrasta, studija primera - projekat
             "Predškolci pešaci" u gradskoj opštini Zvezdara u Beogradu
           </p>
-          <li class="program">
+          <p class="paper-authors">
             Ranković, J., Miletić, D., Stamenović, S. (2016). 5. Međunarodna
             konferencija "Bezbjednost saobraćaja u lokalnoj zajednici", Banja
             Luka, Republika Srpska.
-          </li>
-        </div>
-        <!-- end paper-3 -->
-
-        <!-- paper-4 -->
-        <div id="project-container" class="container">
-          <p class="program modul">
-            Modeli za predviđanje saobraćajnih nezgoda
           </p>
-          <li class="program">
+          <p class="paper-title">
+            4. Modeli za predviđanje saobraćajnih nezgoda
+          </p>
+          <p class="paper-authors">
             Miletić, D. (2016). 11. Međunarodna konferencija "Bezbednost
             saobraćaja u lokalnoj zajednici", Vrnjačka Banja, Republika Srbija.
-          </li>
-        </div>
-        <!-- end paper-4 -->
-
-        <!-- paper-5 -->
-        <div id="project-container" class="container">
-          <p class="program modul">
-            Uticaj vremenskih prilika na nastanak saobraćajnih nezgoda na
+          </p>
+          <p class="paper-title">
+            5. Uticaj vremenskih prilika na nastanak saobraćajnih nezgoda na
             teritoriji grada Beograda u dužem periodu
           </p>
-          <li class="program">
+          <p class="paper-authors">
             Miletić, D., Madžovski, M., Divac, N. (2015). 10. Međunarodna
             konferencija "Bezbednost saobraćaja u lokalnoj zajednici",
             Kragujevac, Republika Srbija.
-          </li>
-        </div>
-        <!-- end paper-5 -->
-
-        <!-- paper-6 -->
-        <div id="project-container" class="container">
-          <p class="program modul">
-            Uporedna analiza buke, brzine i strukture saobraćajnog toka u zoni
-            gradske bolnice "Zvezdara" u Beogradu
           </p>
-          <li class="program">
+          <p class="paper-title">
+            6. Uporedna analiza buke, brzine i strukture saobraćajnog toka u
+            zoni gradske bolnice "Zvezdara" u Beogradu
+          </p>
+          <p class="paper-authors">
             Miletić, D., Madžovski, M., Divac, N. (2015). 10. Međunarodna
             konferencija "Bezbednost saobraćaja u lokalnoj zajednici",
             Kragujevac, Republika Srbija.
-          </li>
-        </div>
-        <!-- end paper-6 -->
-
-        <!-- paper-7 -->
-        <div id="project-container" class="container">
-          <p class="program modul">
-            Uticaj vremenskih prilika na nastanak saobraćajnih nezgoda na
+          </p>
+          <p class="paper-title">
+            7. Uticaj vremenskih prilika na nastanak saobraćajnih nezgoda na
             teritoriji grada Beograda u dužem periodu
           </p>
-          <li class="program">
+          <p class="paper-authors">
             Miletić, D., Madžovski, M., Divac, N. (2014). 3. Međunarodna
             konferencija "Bezbjednost saobraćaja u lokalnoj zajednici", Banja
             Luka, Republika Srpska.
-          </li>
-        </div>
-        <!-- end paper-7 -->
-
-        <!-- paper-8 -->
-        <div id="project-container" class="container">
-          <p class="program modul">
-            Ispitivanje stavova učesnika u saobraćaju nakon implementacije
+          </p>
+          <p class="paper-title">
+            8. Ispitivanje stavova učesnika u saobraćaju nakon implementacije
             kružnih raskrsnica na teritoriji grada Bora
           </p>
-          <li class="program">
+          <p class="paper-authors">
             Miletić, D., Madžovski, M., Divac, N. (2014). 12. Međunarodni
             simpozijum "Prevencija saobraćajnih nezgoda na putevima", Bor,
             Republika Srbija.
-          </li>
-        </div>
-        <!-- end paper-8 -->
-
-        <!-- paper-9 -->
-        <div id="project-container" class="container">
-          <p class="program modul">
-            Analiza teorijske obuke vozača koji su položili vozački ispit u
+          </p>
+          <p class="paper-title">
+            9. Analiza teorijske obuke vozača koji su položili vozački ispit u
             periodu od 2010. do 2013. godine na teritoriji opštine Bor
           </p>
-          <li class="program">
+          <p class="paper-authors">
             Miletić, D., Madžovski, M., Divac, N. (2014). 9. Međunarodna
             konferencija "Bezbednost saobraćaja u lokalnoj zajednici", Zaječar,
             Republika Srbija.
-          </li>
-        </div>
-        <!-- end paper-9 -->
-      </section>
-      <!-- end papers -->
-
-      <!-- other-info -->
-      <section id="other-info">
-        <div class="flex">
-          <h2 class="title">
-            LIČNE OSOBINE, INTERESOVANJA I OSTALE INFORMACIJE
-          </h2>
-          <span class="border"></span>
-        </div>
-
-        <div id="info-container" class="container">
-          <p class="bordered">Backend</p>
-          <p class="bordered">Fullstack web development</p>
-          <p class="bordered">Web design</p>
-          <p class="bordered">Tehnologija</p>
-          <p class="bordered">Odgovornost</p>
-          <p class="bordered">Organizovanost</p>
-          <p class="bordered">Upornost</p>
-          <p class="bordered">Snalažljivost</p>
-          <p class="bordered">Vozačka dozvola B kategorije</p>
+          </p>
         </div>
       </section>
-      <!-- end other-info -->
+      <section id="other" class="section-flex">
+        <a href="#other" id="other-title" class="section-title">
+          <img
+            src="imgs/interests-icon.png"
+            alt="Other info icon"
+            width="27"
+            height="27"
+          />
+          <h2>Ostalo</h2>
+        </a>
+        <div class="card">
+          <div class="tags">
+            <p class="tag dark-bg">Back-end</p>
+            <p class="tag dark-bg">Full stack</p>
+            <p class="tag dark-bg">Web design</p>
+            <p class="tag dark-bg">Tehnologija</p>
+            <p class="tag dark-bg">Odgovornost</p>
+            <p class="tag dark-bg">Organizovanost</p>
+            <p class="tag dark-bg">Upornost</p>
+            <p class="tag dark-bg">Snalažljivost</p>
+            <p class="tag dark-bg">Vozačka dozvola B kategorije</p>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer>
+      <p>
+        Sva prava zadržana &copy; 2023. Website by
+        <a
+          class="pyxl-url"
+          href="http://pyxl-it.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          >PYXL</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
