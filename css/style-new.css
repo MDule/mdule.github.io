@@ -484,4 +484,20 @@ footer {
   .card-details > p {
     padding: 0;
   }
+
+  #extra-curricular-title {
+    align-items: center;
+  }
+
+  #extra-curricular-title > h2 {
+    flex: 0;
+  }
+}
+
+/* 386px */
+@media only screen and (max-width: 24.125rem) {
+  #hero-h-r {
+    flex-direction: column;
+    align-items: center;
+  }
 }
